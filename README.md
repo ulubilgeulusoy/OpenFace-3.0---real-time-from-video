@@ -1,3 +1,29 @@
+# Realtime Webcam Facial Analysis (OpenFace 3.0 Extension)
+
+Author: Ulubilge Ulusoy <br>
+Branch: realtime-gui <br>
+Purpose: Add a realtime webcam interface on top of CMU OpenFace 3.0.
+
+This branch extends the original
+https://github.com/CMU-MultiComp-Lab/OpenFace-3.0
+
+with a live video pipeline that performs:
+
+✔️ Face detection <br>
+✔️ 98-point STAR landmark detection <br>
+✔️ Emotion recognition (AffectNet 8 classes) <br>
+✔️ Gaze estimation (yaw, pitch) <br>
+✔️ Action Unit output (example: AU12 ≈ smile intensity) 
+
+## OpenFace 3.0 Installation
+Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below.
+Use Python 3.10
+
+## Real-time Video Demo
+conda activate [name of your virtual environment] (e.g., openface3py310)
+cd OpenFace-3.0
+python openface_realtime.py
+
 # OpenFace-3.0
 ## Overview
 OpenFace is a comprehensive toolkit for facial feature extraction, supporting face landmark detection, action unit detection, emotion recognition, and gaze estimation.
