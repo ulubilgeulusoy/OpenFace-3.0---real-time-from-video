@@ -9,11 +9,11 @@ https://github.com/CMU-MultiComp-Lab/OpenFace-3.0
 
 with a live video pipeline that performs:
 
-✔️ Face detection <br>
-✔️ 98-point STAR landmark detection <br>
-✔️ Emotion recognition (AffectNet 8 classes) <br>
-✔️ Gaze estimation (yaw, pitch) <br>
-✔️ Action Unit output (example: AU12 ≈ smile intensity) 
+Face detection <br>
+98-point STAR landmark detection <br>
+Emotion recognition (AffectNet 8 classes) <br>
+Gaze estimation (yaw, pitch) <br>
+Action Unit output (only eight AUs are being output for now, and we are waiting for clarification from the OpenFace 3.0 authors on why this is the case)
 
 ## OpenFace 3.0 Installation
 Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below.
