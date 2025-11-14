@@ -7,7 +7,7 @@ Purpose: Add a real-time video GUI with data collection on top of CMU OpenFace 3
 This branch extends the original
 https://github.com/CMU-MultiComp-Lab/OpenFace-3.0
 
-with a live video pipeline GUI that performs:
+with a live video pipeline GUI (openface_realtime.py) that performs:
 
 Face detection <br>
 98-point STAR landmark detection <br>
@@ -28,6 +28,9 @@ python openface_realtime.py <br>
 
 ## Data Collection
 openface_realtime.py script outputs a .csv file containing emotion, gaze estimation, and action-unit data. The script automatically creates a logs folder and stores timestamp-named data files in it after the GUI is closed.
+
+## Use of Generative AI
+openface_realtime.py script generated with ChatGPT 5.1.
 
 # OpenFace-3.0
 ## Overview
