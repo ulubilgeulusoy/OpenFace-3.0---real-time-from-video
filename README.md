@@ -19,7 +19,9 @@ Action Unit output (only eight AUs are being output for now, and we are waiting 
 Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below. <br>
 Use Python 3.10
 
-## Real-time Video GUI Demo
+## Real-time Video GUI Demo (How to operate)
+(Assuming you are using Anaconda -https://www.anaconda.com/-) <br>
+(In your CMD.exe) <br>
 conda activate [name of your virtual environment] (e.g., openface3py310) <br>
 cd OpenFace-3.0 <br>
 python openface_realtime.py <br>
