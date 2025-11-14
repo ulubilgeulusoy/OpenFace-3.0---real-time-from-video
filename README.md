@@ -2,7 +2,7 @@
 
 Author: Ulubilge Ulusoy <br>
 Branch: realtime-gui <br>
-Purpose: Add a realtime webcam interface on top of CMU OpenFace 3.0.
+Purpose: Add a real-time video GUI with data collection on top of CMU OpenFace 3.0.
 
 This branch extends the original
 https://github.com/CMU-MultiComp-Lab/OpenFace-3.0
