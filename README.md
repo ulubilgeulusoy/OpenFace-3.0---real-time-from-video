@@ -16,7 +16,7 @@ with a live video pipeline that performs:
 ✔️ Action Unit output (example: AU12 ≈ smile intensity)
 
 ## OpenFace 3.0 Installation
-Please follow instructions from here: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0
+Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below.
 Use Python 3.10
 
 ## Real-time Video Demo
