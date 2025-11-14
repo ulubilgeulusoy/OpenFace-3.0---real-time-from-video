@@ -1,7 +1,7 @@
 # Realtime Webcam Facial Analysis (OpenFace 3.0 Extension)
 
-Author: Ulubilge Ulusoy
-Branch: realtime-gui
+Author: Ulubilge Ulusoy \\
+Branch: realtime-gui \\
 Purpose: Add a realtime webcam interface on top of CMU OpenFace 3.0.
 
 This branch extends the original
