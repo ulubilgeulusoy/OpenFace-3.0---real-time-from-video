@@ -7,7 +7,7 @@ Purpose: Add a realtime webcam interface on top of CMU OpenFace 3.0.
 This branch extends the original
 https://github.com/CMU-MultiComp-Lab/OpenFace-3.0
 
-with a live video pipeline that performs:
+with a live video pipeline GUI that performs:
 
 Face detection <br>
 98-point STAR landmark detection <br>
@@ -19,10 +19,13 @@ Action Unit output (only eight AUs are being output for now, and we are waiting 
 Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below.
 Use Python 3.10
 
-## Real-time Video Demo
+## Real-time Video GUI Demo
 conda activate [name of your virtual environment] (e.g., openface3py310)
 cd OpenFace-3.0
 python openface_realtime.py
+
+## Data Collection
+openface_realtime.py script outputs a .csv file containing emotion, gaze estimation, and action-unit data. The script automatically creates a logs folder and stores timestamp-named data files in it after the GUI is closed.
 
 # OpenFace-3.0
 ## Overview
