@@ -16,13 +16,13 @@ Gaze estimation (yaw, pitch) <br>
 Action Unit output (only eight AUs are being output for now, and we are waiting for clarification from the OpenFace 3.0 authors on why this is the case)
 
 ## OpenFace 3.0 Installation
-Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below.
+Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below. <br>
 Use Python 3.10
 
 ## Real-time Video GUI Demo
-conda activate [name of your virtual environment] (e.g., openface3py310)
-cd OpenFace-3.0
-python openface_realtime.py
+conda activate [name of your virtual environment] (e.g., openface3py310) <br>
+cd OpenFace-3.0 <br>
+python openface_realtime.py <br>
 
 ## Data Collection
 openface_realtime.py script outputs a .csv file containing emotion, gaze estimation, and action-unit data. The script automatically creates a logs folder and stores timestamp-named data files in it after the GUI is closed.
