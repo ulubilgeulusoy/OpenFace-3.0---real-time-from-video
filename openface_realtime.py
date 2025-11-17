@@ -208,9 +208,9 @@ def main():
 
             # Draw a semi-transparent rectangle as background for text
             overlay = frame.copy()
-            panel_width = 320
+            panel_width = 200
             # height enough for header + 8 emotions + gaze + ~min(len(AUs), 10)
-            panel_height = 40 + (len(EMOTION_LABELS) + 2 + min(len(au_values), 10)) * line_h
+            panel_height = 60 + (len(EMOTION_LABELS) + 2 + min(len(au_values), 10)) * line_h
             cv2.rectangle(
                 overlay,
                 (panel_x - 5, panel_y - 20),
@@ -235,17 +235,17 @@ def main():
             panel_y += line_h + 5
 
             # Emotion distribution
-            cv2.putText(
-                frame,
-                "Emotion probs:",
-                (panel_x, panel_y),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.6,
-                (255, 255, 255),
-                1,
-                cv2.LINE_AA,
-            )
-            panel_y += line_h
+            # cv2.putText(
+            #     frame,
+            #     "Emotion probs:",
+            #     (panel_x, panel_y),
+            #     cv2.FONT_HERSHEY_SIMPLEX,
+            #     0.6,
+            #     (255, 255, 255),
+            #     1,
+            #     cv2.LINE_AA,
+            # )
+            # panel_y += line_h
 
             for label, p in zip(EMOTION_LABELS, emo_probs):
                 cv2.putText(
@@ -264,7 +264,7 @@ def main():
             panel_y += 5
             cv2.putText(
                 frame,
-                f"Gaze yaw: {yaw:+.2f} rad ({yaw_deg:+.1f} deg)",
+                f"Gaze yaw: {yaw_deg:+.1f} deg",
                 (panel_x, panel_y),
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.55,
@@ -275,7 +275,7 @@ def main():
             panel_y += line_h
             cv2.putText(
                 frame,
-                f"Gaze pitch: {pitch:+.2f} rad ({pitch_deg:+.1f} deg)",
+                f"Gaze pitch: {pitch_deg:+.1f} deg",
                 (panel_x, panel_y),
                 cv2.FONT_HERSHEY_SIMPLEX,
                 0.55,
@@ -287,17 +287,17 @@ def main():
 
             # AU info (show all, but cap visible lines to avoid crazy tall panels)
             panel_y += 5
-            cv2.putText(
-                frame,
-                "Action Units (raw outputs):",
-                (panel_x, panel_y),
-                cv2.FONT_HERSHEY_SIMPLEX,
-                0.55,
-                (255, 0, 255),
-                1,
-                cv2.LINE_AA,
-            )
-            panel_y += line_h
+            # cv2.putText(
+            #     frame,
+            #     "Action Units (AUs):",
+            #     (panel_x, panel_y),
+            #     cv2.FONT_HERSHEY_SIMPLEX,
+            #     0.55,
+            #     (0, 255, 0),
+            #     1,
+            #     cv2.LINE_AA,
+            # )
+            # panel_y += line_h
 
             max_aus_to_show = min(len(au_values), 10)  # show first 10 by default
             for idx in range(max_aus_to_show):
