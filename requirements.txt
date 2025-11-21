@@ -7,6 +7,7 @@ opencv_contrib_python==4.11.0.86
 opencv_python==4.9.0.80
 pandas==2.2.3
 Pillow==9.4.0
+pylsl>=1.16.1
 scipy==1.15.2
 seaborn==0.13.2
 scikit-image
