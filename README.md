@@ -24,13 +24,19 @@ Use Python 3.10
 (In your CMD.exe) <br>
 conda activate [name of your virtual environment] (e.g., openface3py310) <br>
 cd OpenFace-3.0 <br>
-python openface_realtime.py <br>
+python openface_realtime_ls.py <br>
+OR <br>
+python openface_realtime_csv_data_export_only.py (use this version if you are not interested in integrating this data with other data types, such as ECG, with LSL)
 
 ## Data Collection
-openface_realtime.py script outputs a .csv file containing emotion, gaze estimation, and action-unit data. The script automatically creates a logs folder and stores timestamp-named data files in it after the GUI is closed.
+openface_realtime_ls script outputs data suitable for LSL streams. <br>
+openface_realtime_csv_data_export_only.py script outputs a .csv file containing emotion, gaze estimation, and action-unit data. The script automatically creates a logs folder and stores timestamp-named data files in it after the GUI is closed.
+
+## Lab Streaming Layer (LSL) Integration
+openface_realtime_ls.py script is already built-in with the LSL bridge. When you run this script, you will be able to stream the data automatically to the LabRecorder.
 
 ## Use of Generative AI
-openface_realtime.py script generated with ChatGPT 5.1.
+openface_realtime_ls.py and openface_realtime_csv_data_export_only.py scripts are generated with ChatGPT 5.1.
 
 # OpenFace-3.0
 ## Overview
