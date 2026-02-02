@@ -16,8 +16,10 @@ Gaze estimation (yaw, pitch) <br>
 Action Unit output (only eight AUs are being output for now, and we are waiting for clarification from the OpenFace 3.0 authors on why this is the case)
 
 ## OpenFace 3.0 Installation
-Please follow the instructions at: https://github.com/CMU-MultiComp-Lab/OpenFace-3.0 or below. <br>
-Use Python 3.10
+pip install -r requirements.txt
+pip install openface-test
+
+Manually download the model weights ([google drive](https://drive.google.com/drive/folders/1aBEol-zG_blHSavKFVBH9dzc9U9eJ92p) / [huggingface](https://huggingface.co/nutPace/openface_weights)) and add them to your "weights" folder "C:\Users\[username]\OpenFace-3.0---real-time-from-video\weights"
 
 ## Real-time Video GUI Demo (How to operate)
 (Assuming you are using Anaconda -https://www.anaconda.com/-) <br>
