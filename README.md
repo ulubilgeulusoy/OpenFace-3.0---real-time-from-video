@@ -18,7 +18,7 @@ Action Unit output (only eight AUs are being output for now, and we are waiting 
 ## OpenFace 3.0 Installation
 pip install -r requirements.txt <br>
 pip install openface-test <br>
-Manually download the model weights ([google drive](https://drive.google.com/drive/folders/1aBEol-zG_blHSavKFVBH9dzc9U9eJ92p) / [huggingface](https://huggingface.co/nutPace/openface_weights)) and add them to your "weights" folder "C:\Users\[username]\OpenFace-3.0---real-time-from-video\weights" <br>
+Manually download the model weights ([google drive](https://drive.google.com/drive/folders/1aBEol-zG_blHSavKFVBH9dzc9U9eJ92p) / [huggingface](https://huggingface.co/nutPace/openface_weights)) and add them to your "weights" folder "C:\Users\username\OpenFace-3.0---real-time-from-video\weights" <br>
 
 ## Real-time Video GUI Demo (How to operate)
 (Assuming you are using Anaconda -https://www.anaconda.com/-) <br>
