@@ -72,6 +72,56 @@ openface download    #download model weights with huggingface
 ```
 Alternatively, you may manually download the model weights ([google drive](https://drive.google.com/drive/folders/1aBEol-zG_blHSavKFVBH9dzc9U9eJ92p) / [huggingface](https://huggingface.co/nutPace/openface_weights))
 
+### Linux note for STAR landmark loading
+
+On some Ubuntu/Linux setups, `python3 openface_realtime_lsl.py` may fail during landmark model initialization with:
+
+```text
+PermissionError: [Errno 13] Permission denied: '/work'
+```
+
+This happens because the installed `openface-test` package contains a hardcoded STAR runtime path from the original developer machine:
+
+```python
+self.ckpt_dir = '/work/jiewenh/openFace/OpenFace-3.0/STAR'
+```
+
+If you hit this issue, update the file inside your local virtual environment:
+
+```text
+<your-venv>/lib/python3.12/site-packages/openface/STAR/conf/alignment.py
+```
+
+Replace:
+
+```python
+import os.path as osp
+```
+
+with:
+
+```python
+import os
+import os.path as osp
+```
+
+Then replace:
+
+```python
+self.ckpt_dir = '/work/jiewenh/openFace/OpenFace-3.0/STAR'
+```
+
+with:
+
+```python
+default_ckpt_dir = osp.abspath(
+    osp.join(osp.dirname(__file__), "..", "runtime")
+)
+self.ckpt_dir = os.environ.get("OPENFACE_STAR_CKPT_DIR", default_ckpt_dir)
+```
+
+This keeps STAR runtime artifacts in a writable local directory instead of `/work/...`.
+
 ## Usage
 
 ### 1. Face Detection
@@ -400,5 +450,4 @@ ArXiv citation below (FG 2025 Proceedings not yet online):
 ```
 
 If you have any questions, please open a Github issue on this repository.
-
 

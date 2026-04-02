@@ -6,4 +6,9 @@ weights/*.pth
 # Ignore logs directory
 logs/
 logs/*.csv
+
 .github/copilot-instructions.md
+envopenface/
+.codex
+
+
