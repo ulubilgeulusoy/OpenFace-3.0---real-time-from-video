@@ -190,7 +190,7 @@ def main():
     landmark_detector = LandmarkDetector(model_path=landmark_model_path, device=device)
     multitask_model = MultitaskPredictor(model_path=multitask_model_path, device=device)
 
-    cap = cv2.VideoCapture(2)
+    cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Error: Could not open webcam.")
         return
