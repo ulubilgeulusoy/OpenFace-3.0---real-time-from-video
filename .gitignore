@@ -7,3 +7,5 @@ weights/*.pth
 logs/
 logs/*.csv
 .github/copilot-instructions.md
+
+.vscode/
