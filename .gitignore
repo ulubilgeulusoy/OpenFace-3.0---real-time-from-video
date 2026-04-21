@@ -9,3 +9,5 @@ logs/*.csv
 .github/copilot-instructions.md
 
 .vscode/
+
+lsl_env/
