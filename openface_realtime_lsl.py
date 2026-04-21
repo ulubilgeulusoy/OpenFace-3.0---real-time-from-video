@@ -168,6 +168,15 @@ def draw_overlay_panel(frame, emo_probs, yaw_deg, pitch_deg, au_values):
         panel_y += line_h
 
 
+def resolve_runtime_device() -> str:
+    if torch.cuda.is_available() and torch.cuda.device_count() > 0:
+        device = "cuda:0"
+    else:
+        device = "cpu"
+    print(f"Using runtime device: {device}")
+    return device
+
+
 def main():
     base_dir = os.path.dirname(__file__)
     weights_dir = os.path.join(base_dir, "weights")
@@ -175,7 +184,7 @@ def main():
     landmark_model_path = os.path.join(weights_dir, "Landmark_98.pkl")
     multitask_model_path = os.path.join(weights_dir, "MTL_backbone.pth")
 
-    device = "cpu"  # change to "cuda" if available
+    device = resolve_runtime_device()
 
     stream_name = "OpenFaceRealtime"
     source_id = "openface_realtime_gui_nofacefound"
