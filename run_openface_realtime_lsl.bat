@@ -3,19 +3,28 @@ setlocal
 
 cd /d "%~dp0"
 
-set "PYTHON_EXE=C:\Users\ulul8626\AppData\Local\miniconda3\envs\lsl_env\python.exe"
+set "VENV_DIR=%~dp0lsl_env"
+set "ACTIVATE_BAT=%VENV_DIR%\Scripts\activate.bat"
+set "PYTHON_EXE=%VENV_DIR%\Scripts\python.exe"
 set "SCRIPT_PATH=%~dp0openface_realtime_lsl.py"
-
-if not exist "%PYTHON_EXE%" (
-    echo Could not find lsl_env Python at:
-    echo %PYTHON_EXE%
-    pause
-    exit /b 1
-)
 
 if not exist "%SCRIPT_PATH%" (
     echo Could not find script:
     echo %SCRIPT_PATH%
+    pause
+    exit /b 1
+)
+
+if exist "%ACTIVATE_BAT%" (
+    call "%ACTIVATE_BAT%"
+)
+
+if not exist "%PYTHON_EXE%" (
+    echo Could not find local virtual environment Python at:
+    echo %PYTHON_EXE%
+    echo.
+    echo Expected virtual environment folder:
+    echo %VENV_DIR%
     pause
     exit /b 1
 )
