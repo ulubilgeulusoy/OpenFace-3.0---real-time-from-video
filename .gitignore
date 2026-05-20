@@ -11,3 +11,4 @@ logs/*.csv
 .vscode/
 
 lsl_env/
+*.bat

@@ -15,6 +15,12 @@ Emotion recognition (AffectNet 8 classes) <br>
 Gaze estimation (yaw, pitch) <br>
 Action Unit output (only eight AUs are being output for now, and we are waiting for clarification from the OpenFace 3.0 authors on why this is the case)
 
+## License
+
+This repository is a fork and research extension of CMU MultiComp Lab's OpenFace 3.0. The repository remains governed by the original OpenFace 3.0 Software License Agreement for academic or non-profit noncommercial research use only. See the [LICENSE](LICENSE) file for details.
+
+The real-time video/LSL/CSV extensions in this fork were developed for research data collection workflows and should be used only in accordance with the original OpenFace 3.0 license and the licenses of all third-party dependencies and model weights.
+
 ## OpenFace 3.0 Installation
 pip install -r requirements.txt <br>
 pip install openface-test <br>
