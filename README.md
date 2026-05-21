@@ -8,8 +8,10 @@ Purpose: Add realtime webcam GUI workflows for live preview, Lab Streaming Layer
 
 | Branch | Compute | OS | LSL | CSV Export | Realtime GUI |
 | --- | --- | --- | --- | --- | --- |
+| `main` | ![CPU Default](https://img.shields.io/badge/Compute-CPU_Default-1f6feb) | ![Windows](https://img.shields.io/badge/OS-Windows-0078D6) ![Linux](https://img.shields.io/badge/OS-Linux-FCC624) | ![LSL No](https://img.shields.io/badge/LSL-No-6e7781) | ![CSV No](https://img.shields.io/badge/CSV-No-6e7781) | ![GUI No](https://img.shields.io/badge/GUI-No-6e7781) |
 | `realtime-gui` | ![CPU Default](https://img.shields.io/badge/Compute-CPU_Default-1f6feb) | ![Windows](https://img.shields.io/badge/OS-Windows-0078D6) | ![LSL Yes](https://img.shields.io/badge/LSL-Yes-2ea44f) | ![CSV Yes](https://img.shields.io/badge/CSV-Yes-2ea44f) | ![GUI Yes](https://img.shields.io/badge/GUI-Yes-2ea44f) |
 | `realtime-gui-gpu-version` | ![GPU Preferred](https://img.shields.io/badge/Compute-GPU_Preferred-238636) | ![Windows](https://img.shields.io/badge/OS-Windows-0078D6) | ![LSL Yes](https://img.shields.io/badge/LSL-Yes-2ea44f) | ![CSV No](https://img.shields.io/badge/CSV-No-6e7781) | ![GUI Yes](https://img.shields.io/badge/GUI-Yes-2ea44f) |
+| `realtime-gui-linux` | ![CPU Default](https://img.shields.io/badge/Compute-CPU_Default-1f6feb) | ![Linux](https://img.shields.io/badge/OS-Linux-FCC624) | ![LSL Yes](https://img.shields.io/badge/LSL-Yes-2ea44f) | ![CSV Yes](https://img.shields.io/badge/CSV-Yes-2ea44f) | ![GUI Yes](https://img.shields.io/badge/GUI-Yes-2ea44f) |
 
 ## Overview
 
