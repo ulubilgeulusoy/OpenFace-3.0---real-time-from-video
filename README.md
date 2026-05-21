@@ -4,6 +4,13 @@ Author: Ulubilge Ulusoy <br>
 Branch: realtime-gui <br>
 Purpose: Add realtime webcam GUI workflows for live preview, Lab Streaming Layer (LSL) streaming, and CSV-based data collection on top of CMU OpenFace 3.0.
 
+## Branch Matrix
+
+| Branch | Compute | OS | LSL | CSV Export | Realtime GUI |
+| --- | --- | --- | --- | --- | --- |
+| `realtime-gui` | ![CPU Default](https://img.shields.io/badge/Compute-CPU_Default-1f6feb) | ![Windows](https://img.shields.io/badge/OS-Windows-0078D6) | ![LSL Yes](https://img.shields.io/badge/LSL-Yes-2ea44f) | ![CSV Yes](https://img.shields.io/badge/CSV-Yes-2ea44f) | ![GUI Yes](https://img.shields.io/badge/GUI-Yes-2ea44f) |
+| `realtime-gui-gpu-version` | ![GPU Preferred](https://img.shields.io/badge/Compute-GPU_Preferred-238636) | ![Windows](https://img.shields.io/badge/OS-Windows-0078D6) | ![LSL Yes](https://img.shields.io/badge/LSL-Yes-2ea44f) | ![CSV No](https://img.shields.io/badge/CSV-No-6e7781) | ![GUI Yes](https://img.shields.io/badge/GUI-Yes-2ea44f) |
+
 ## Overview
 
 This repository is a research-oriented fork of [CMU MultiComp Lab's OpenFace 3.0](https://github.com/CMU-MultiComp-Lab/OpenFace-3.0).
@@ -120,10 +127,6 @@ Each CSV row contains:
 - Action Unit values
 
 The AU column count is also inferred dynamically from the model output.
-
-## Use of Generative AI
-
-The branch-specific realtime scripts [openface_realtime_lsl.py](openface_realtime_lsl.py) and [openface_realtime_csv_data_export_only.py](openface_realtime_csv_data_export_only.py) were generated with ChatGPT 5.1 and then incorporated into this research workflow.
 
 ## Notes
 
