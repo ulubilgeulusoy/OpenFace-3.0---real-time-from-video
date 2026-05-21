@@ -36,9 +36,6 @@ openface_realtime_csv_data_export_only.py script outputs a .csv file containing 
 ## Lab Streaming Layer (LSL) Integration
 openface_realtime_ls.py script is already built-in with the LSL bridge. When you run this script, you will be able to stream the data automatically to the LabRecorder.
 
-## Use of Generative AI
-openface_realtime_ls.py and openface_realtime_csv_data_export_only.py scripts are generated with ChatGPT 5.1.
-
 # OpenFace-3.0
 ## Overview
 OpenFace is a comprehensive toolkit for facial feature extraction, supporting face landmark detection, action unit detection, emotion recognition, and gaze estimation.
