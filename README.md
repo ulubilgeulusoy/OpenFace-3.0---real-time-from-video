@@ -135,3 +135,7 @@ The AU column count is also inferred dynamically from the model output.
 - This fork is focused on realtime experimental data collection rather than replacing the full upstream OpenFace 3.0 documentation.
 - The number of Action Unit outputs depends on the model output returned at runtime.
 - For core OpenFace 3.0 APIs, CLI usage, and upstream research citation, use the upstream repository documentation.
+
+## AI Assistance Disclosure
+
+This repository was developed with assistance from OpenAI Codex. Codex was used to generate and refine portions of the codebase, documentation, and repository structure.
